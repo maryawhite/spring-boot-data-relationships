@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teachers Index</title>
+</head>
+<body>
+<h1>Teachers Index</h1>
+<div th:each="teacher : ${teachers}">
+    <p th:text="${teacher.getId()} + ', ' + ${teacher.getName()}"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subject Index</title>
+</head>
+<body>
+<h1>Subjects Index</h1>
+<div th:each="subject : ${subjects}">
+    <p th:text="${subject.getId()} + ', ' + ${subject.getName()}"></p>
+</div>
+</body>
+</html>
